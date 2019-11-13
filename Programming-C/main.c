@@ -6,10 +6,10 @@
 //  Copyright © 2019 杨笑天. All rights reserved.
 //
 
-#include "wordcnt/wordcnt.c"
+#include "algorithm/insert_sort.c"
 
 int main(int argc, const char * argv[]) {
     // insert code here...
-    wordcnt();
+    play();
     return 0;
 }
