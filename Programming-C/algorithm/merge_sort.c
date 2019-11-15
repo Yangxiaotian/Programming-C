@@ -15,11 +15,11 @@ void merge(int *A, int p, int q, int r)
     int n2 = r-q;
     int *L = (int *)malloc(sizeof(int)*n1);
     int *R = (int *)malloc(sizeof(int)*n2);
-    int i, j, k=0;
+    int i, j, k=p;
     for(i = 0; i < n1; i++) 
         L[i] = A[p+i];
     for(j = 0; j < n2; j++)
-        R[j] = A[q+j];
+        R[j] = A[q+j+1];
     while(i < n1 && j < n2)
     {
         if(L[i] < R[j])
