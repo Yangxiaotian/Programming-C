@@ -33,16 +33,16 @@ void merge(int *A, int p, int q, int r)
 }
 void play(void)
 {
-    int n, int *A;
+    int n;
     printf("数据个数: ");
     scanf("%d", &n);
     printf("输入数据: \n");
-        A = (int *)malloc(sizeof(int) * n);
-        for(int i = 0; i < n; i++)
-            scanf("%d", A+i);
-        mergeSort(A, 0, n-1);
-        for(int i = 0; i < n; i++)
-            printf("%d\t", A[i]);
+    int *A = (int *)malloc(sizeof(int) * n);
+    for(int i = 0; i < n; i++)
+        scanf("%d", A+i);
+    mergeSort(A, 0, n-1);
+    for(int i = 0; i < n; i++)
+        printf("%d\t", A[i]);
 }
 
         
