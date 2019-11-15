@@ -1,14 +1,5 @@
 #include <stdio.h>
-void quickSort(int *A, int p, int r)
-{
-    if(p < r)
-    {
-        int q = partition(A, p, r);
-        quickSort(A, p, q-1);
-        quickSort(A, q+1, r);
-    }
-}
-}
+#include <stdlib.h>
 int partition(int *A, int p, int r)
 {
     int key = A[r];
@@ -26,6 +17,16 @@ int partition(int *A, int p, int r)
     A[i+1] = key;
     return i+1;
 }
+void quickSort(int *A, int p, int r)
+{
+    if(p < r)
+    {
+        int q = partition(A, p, r);
+        quickSort(A, p, q-1);
+        quickSort(A, q+1, r);
+    }
+}
+
 void play(void)
 {
     int n;
