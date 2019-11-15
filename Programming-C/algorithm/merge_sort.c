@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 void merge(int *A, int p, int q, int r)
 {
     int n1 = q-p+1;
