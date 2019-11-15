@@ -1,14 +1,5 @@
 #include <stdio.h>
-#include <stdlib.h>ß
-void quickSort(int *A, int p, int r)
-{
-    if(p < r)
-    {
-        int q = partition(A, p, r);
-        quickSort(A, p, q-1);
-        quickSort(A, q+1, r);
-    }
-}
+#include <stdlib.h>
 int partition(int *A, int p, int r)
 {
     int x = A[r];
@@ -26,12 +17,22 @@ int partition(int *A, int p, int r)
     A[i+1] = x;
     return i+1;
 }
+void quickSort(int *A, int p, int r)
+{
+    if(p < r)
+    {
+        int q = partition(A, p, r);
+        quickSort(A, p, q-1);
+        quickSort(A, q+1, r);
+    }
+}
+
 void play(void)
 {
     int n;
     printf("请输入数据个数：");
     scanf("%d", &n);
-    int *A = (int *) malloc(sizeof(int)*n);
+    int *A = (int *)malloc(sizeof(int)*n);
     printf("请输入数据：");
     for(int i = 0; i < n; i++)
         scanf("%d", A+i);

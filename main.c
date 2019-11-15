@@ -6,7 +6,7 @@
 //  Copyright © 2019 杨笑天. All rights reserved.
 //
 
-#include "algorithm/insert_sort.c"
+#include "algorithm/quick_sort.c"
 
 int main(int argc, const char * argv[]) {
     // insert code here...

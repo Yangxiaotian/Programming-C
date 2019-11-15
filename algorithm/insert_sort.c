@@ -7,6 +7,7 @@
 //
 
 #include <stdio.h>
+#include <stdlib.h>
 void insertSort(int *A, int n)
 {
     for(int i=1; i<n; i++)
