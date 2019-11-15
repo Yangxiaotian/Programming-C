@@ -20,6 +20,7 @@ void merge(int *A, int p, int q, int r)
         L[i] = A[p+i];
     for(j = 0; j < n2; j++)
         R[j] = A[q+j+1];
+    i = j = 0;
     while(i < n1 && j < n2)
     {
         if(L[i] < R[j])
